@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#box{
+				height: 100px;
+				border: 1px solid #000;
+				background: pink;
+			}
+			#box:before{
+				content: "真好玩，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈";
+			}
+			@media all and (max-width:900px){
+				#box{
+					background: blueviolet;
+				}
+				#box:before{
+					content:"位置变小了不能自在飞行";
+				}
+			}
+			@media all and (max-width:500px){
+				#box{
+					background: red;
+				}
+				#box:before{
+					content:"宽度太小了我已经不高兴了";
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>媒体类型</title>
+<style type="text/css">
+	.box{
+		width: 100px;
+		height: 100px;
+		background: red;
+	}
+	/*写在样式表的下面*/
+	/*all所有的媒体类型都是黄色，有很多类型 电视 触摸设备 盲文*/
+	/*@media all{
+		.box{
+			background: yellow;
+		}
+	}*/
+	
+	/*only关键字只有   只有在彩屏设备会是蓝色*/
+	/*@media only screen{
+		.box{
+			background: blue;
+		}
+	}*/
+	
+	@media all and (min-width:500px){
+		.box{
+			background: pink;
+		}
+	}
+	/*
+		@media all all所有的媒体类型
+		@media only 设备类型 only关键字只有   只有在某种设备类型识别 加不加没区别
+		
+		当屏幕宽度大于等于500的时候识别
+		@@media all and (min-width:500px) and连接媒体类型all和媒体特性的
+	*/
+</style>
+</head>
+
+<body>
+	<div class="box">
+		
+	</div>
+</body>
+</html>
